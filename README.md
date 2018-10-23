@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **4** hours spent in total
+Time spent: **3** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -11,7 +11,7 @@ Time spent: **4** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.4
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: <br>
   ![Alt Text](https://media.giphy.com/media/7E5lCjTAVgn5xGBnEq/giphy.gif)
   - [ ] Steps to recreate: Create a post. Go to this website, https://gist.github.com/ethicalhack3r/48d4e3e73c9241bd5b8c, copy the text. Leave a reply on the created post. An alert should come up on the page. 
 2. Authenticated Attachment Name Stored XSS
@@ -19,7 +19,7 @@ Time spent: **4** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.5.3
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: <br>
   ![Alt Text](https://media.giphy.com/media/4NrBRwPZR8YdDkZw5E/giphy.gif)
   - [ ] Steps to recreate: Create a post, in the post insert a link. Put the url and text to equal this "\<script>alert("xss")\</script>" ignoring the backslashes
 3. Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
@@ -27,6 +27,6 @@ Time spent: **4** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.7.3
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: <br>
 ![Alt Text](https://media.giphy.com/media/69pvSmCrWQbNGaGR0z/giphy.gif)
   - [ ] Steps to recreate: Create a post, and in the comments create a youtube embed link with malicious code inside. This code will run when the site tries to load the youtube video. Here is an example of a bad link '\[embed src='https://www.youtube.com/embed/123\x3csvg onload=alert(1)\x3e']\[/embed]'
